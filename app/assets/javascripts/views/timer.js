@@ -11,7 +11,8 @@ ThaiMer.Views.Timer = Backbone.View.extend({
         return this;
     },
     startTimer: function(event) {
-        this._timeLeft = parseInt(this.$('input').val());
+        var timeVal = this.$('input').val();
+        this._timeLeft = parseInt(timeVal);
         this._interval = setInterval(this.tick.bind(this), 1000);
     },
     tick: function() {
@@ -19,7 +20,7 @@ ThaiMer.Views.Timer = Backbone.View.extend({
         if (this._timeLeft == 0) {
             clearInterval(this._interval);
             alert('donesky');
-   } else {
+        } else {
             this.updateDisplay();
         }
     },
