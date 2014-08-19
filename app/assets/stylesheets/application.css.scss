@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+body {
+  width: 90%;
+  #  background-color: black;
+  margin: 25px auto 0 auto;
+  padding: 0;
+}
+
+#clock-face {
+  width: 300px;
+  height: 300px;
+  margin: 10px auto;
+  border-radius: 150px;
+  background-color: black;
+  border: dotted grey 1px;
+  position: relative;
+}
+
+#minute-subdial{
+  width: 50px;
+  height: 50px;
+  margin: 20px auto;
+  border-radius: 25px;
+  background-color: white;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin: -25px;
+
+}
+#second-hand {
+  width: 5px;
+  height: 150px;
+  margin: 0px auto;
+  border-radius: 50px;
+  background-color: #4373B5;
+  box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.55);
+  transform-origin: 50% 100%;
+}
